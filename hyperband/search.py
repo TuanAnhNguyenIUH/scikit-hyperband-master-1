@@ -343,7 +343,7 @@ class HyperbandSearchCV(BaseSearchCV):
     def _run_search(self, evaluate_candidates):
         self._validate_input()
         if not hasattr(self, 'multimetric_'):
-        self.multimetric_ = False
+           self.multimetric_ = False
         s_max = int(np.floor(np.log(self.max_iter / self.min_iter) / np.log(self.eta)))
         B = (s_max + 1) * self.max_iter
 
